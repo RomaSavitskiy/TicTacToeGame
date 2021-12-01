@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="RootPane" prefHeight="700.0" prefWidth="1100.0" styleClass="bodybg" stylesheets="@background.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tictactoe.HelloController">
+   <children>
+      <Button fx:id="menuArticlesButton" layoutX="397.0" layoutY="263.0" mnemonicParsing="false" onAction="#clickButton1" prefHeight="86.0" prefWidth="283.0" style="-fx-background-color: #00FFFF;" text="PLAY" textAlignment="CENTER" AnchorPane.bottomAnchor="350.6" AnchorPane.leftAnchor="397.0" AnchorPane.rightAnchor="420.0">
+         <font>
+            <Font name="Yu Gothic Regular" size="45.0" />
+         </font>
+      </Button>
+      <Button fx:id="ExitButton" layoutX="397.0" layoutY="401.0" mnemonicParsing="false" onAction="#ClickExitButton" prefHeight="86.0" prefWidth="283.0" style="-fx-background-color: #00FFFF;" text="EXIT" textAlignment="CENTER" AnchorPane.bottomAnchor="212.60000000000002">
+         <font>
+            <Font name="Yu Gothic Regular" size="45.0" />
+         </font>
+      </Button>
+      <Text fill="AQUA" layoutX="307.0" layoutY="118.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="3.0" text="Tic-Tac-Toe">
+         <font>
+            <Font size="90.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

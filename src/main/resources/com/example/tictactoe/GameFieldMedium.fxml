@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" styleClass="bodybg" stylesheets="@background2.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tictactoe.TicTacToeSingleMedium">
+   <children>
+      <ImageView fitHeight="690.0" fitWidth="1107.0" layoutX="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@background2.css" />
+         </image>
+      </ImageView>
+      <Text fx:id="WinnerTextMedium" fill="WHITE" layoutX="395.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tic-Tac-Toe" textAlignment="CENTER" wrappingWidth="310.9366455078125">
+         <font>
+            <Font size="41.0" />
+         </font></Text>
+      <Button onAction="#ResetButtonMedium" layoutX="437.0" layoutY="570.0" mnemonicParsing="false"  prefHeight="55.0" prefWidth="226.0" text="RESET">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <FlowPane layoutX="324.0" layoutY="101.0" prefHeight="441.0" prefWidth="453.0">
+         <children>
+            <Button fx:id="button40" onAction="#ClickButton40" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0">
+               <font>
+                  <Font size="70.0" />
+               </font></Button>
+            <Button fx:id="button41" onAction="#ClickButton41" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0">
+               <font>
+                  <Font size="70.0" />
+               </font></Button>
+            <Button fx:id="button42" onAction="#ClickButton42" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0">
+               <font>
+                  <Font size="70.0" />
+               </font></Button>
+            <Button fx:id="button43" onAction="#ClickButton43" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0">
+               <font>
+                  <Font size="70.0" />
+               </font></Button>
+            <Button fx:id="button44" onAction="#ClickButton44" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0">
+               <font>
+                  <Font size="70.0" />
+               </font></Button>
+            <Button fx:id="button45" onAction="#ClickButton45" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0">
+               <font>
+                  <Font size="70.0" />
+               </font></Button>
+            <Button fx:id="button46" onAction="#ClickButton46" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0">
+               <font>
+                  <Font size="70.0" />
+               </font></Button>
+            <Button fx:id="button47" onAction="#ClickButton47" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0">
+               <font>
+                  <Font size="70.0" />
+               </font></Button>
+            <Button fx:id="button48" onAction="#ClickButton48" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0">
+               <font>
+                  <Font size="70.0" />
+               </font></Button>
+         </children>
+      </FlowPane>
+      <ImageView fitHeight="74.0" fitWidth="118.0" layoutX="35.0" layoutY="31.0" pickOnBounds="true">
+         <image>
+            <Image url="@aboba.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="BackButtonMedium" onAction="#ClickBackBackButtonMedium" blendMode="COLOR_BURN" layoutX="35.0" layoutY="34.0" mnemonicParsing="false"  prefHeight="67.0" prefWidth="118.0" stylesheets="@Arrow.css" />
+   </children>
+</AnchorPane>
