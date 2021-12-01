@@ -13,7 +13,6 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Random;
 
 /**
  * Game process of easy game
@@ -61,8 +60,6 @@ public class TicTacToeSingleMedium{
 
     int winner4 = 0;
 
-    Random random = new Random(System.currentTimeMillis());
-
     int[] ListButtons = new int[] {0,0,0,0,0,0,0,0,0};
 
     /**
@@ -74,11 +71,10 @@ public class TicTacToeSingleMedium{
     }
 
     /**
-     *
-     * @param ev1
+     * Human turn metods
      */
     @FXML
-    public void ClickButton40(ActionEvent ev1){
+    public void ClickButton40(){
         button40.setText("X");
         playerTurn++;
         button40.setDisable(true);
@@ -91,13 +87,8 @@ public class TicTacToeSingleMedium{
         }
     }
 
-
-    /**
-     *
-     * @param ev1
-     */
     @FXML
-    public void ClickButton41(ActionEvent ev1){
+    public void ClickButton41(){
         button41.setText("X");
         playerTurn++;
         button41.setDisable(true);
@@ -110,12 +101,8 @@ public class TicTacToeSingleMedium{
         }
     }
 
-    /**
-     *
-     * @param ev1
-     */
     @FXML
-    public void ClickButton42(ActionEvent ev1){
+    public void ClickButton42(){
         button42.setText("X");
         playerTurn++;
         button42.setDisable(true);
@@ -128,12 +115,8 @@ public class TicTacToeSingleMedium{
         }
     }
 
-    /**
-     *
-     * @param ev1
-     */
     @FXML
-    public void ClickButton43(ActionEvent ev1){
+    public void ClickButton43(){
         button43.setText("X");
         playerTurn++;
         button43.setDisable(true);
@@ -146,12 +129,9 @@ public class TicTacToeSingleMedium{
         }
     }
 
-    /**
-     *
-     * @param ev1
-     */
+
     @FXML
-    public void ClickButton44(ActionEvent ev1){
+    public void ClickButton44(){
         button44.setText("X");
         playerTurn++;
         button44.setDisable(true);
@@ -164,12 +144,8 @@ public class TicTacToeSingleMedium{
         }
     }
 
-    /**
-     *
-     * @param ev1
-     */
     @FXML
-    public void ClickButton45(ActionEvent ev1){
+    public void ClickButton45(){
         button45.setText("X");
         playerTurn++;
         button45.setDisable(true);
@@ -183,12 +159,8 @@ public class TicTacToeSingleMedium{
     }
 
 
-    /**
-     *
-     * @param ev1
-     */
     @FXML
-    public void ClickButton46(ActionEvent ev1){
+    public void ClickButton46(){
         button46.setText("X");
         playerTurn++;
         button46.setDisable(true);
@@ -201,12 +173,8 @@ public class TicTacToeSingleMedium{
         }
     }
 
-    /**
-     *
-     * @param ev1
-     */
     @FXML
-    public void ClickButton47(ActionEvent ev1){
+    public void ClickButton47(){
         button47.setText("X");
         playerTurn++;
         button47.setDisable(true);
@@ -219,12 +187,9 @@ public class TicTacToeSingleMedium{
         }
     }
 
-    /**
-     *
-     * @param ev1
-     */
+
     @FXML
-    public void ClickButton48(ActionEvent ev1){
+    public void ClickButton48(){
         button48.setText("X");
         playerTurn++;
         button48.setDisable(true);
@@ -462,10 +427,9 @@ public class TicTacToeSingleMedium{
 
     /**
      * back button
-     * @param ev
      */
     @FXML
-    private void ClickBackBackButtonMedium(ActionEvent ev){
+    private void ClickBackBackButtonMedium(){
         BackButtonMedium.getScene().getWindow().hide();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("ChooseSinglRegim.fxml"));

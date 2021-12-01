@@ -1,8 +1,5 @@
 package com.example.tictactoe;
 
-
-import java.util.*;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -60,7 +57,6 @@ public class TicTacToeSingleHard {
     private static final char DOT_O = 'O'; // Символ
     private static char[][] map = new char[5][5]; // Матрица карты
     private static final int SIZE = 3; // Размер поля
-    private static Scanner scanner = new Scanner(System.in);
     private static Random random = new Random();
 
     ArrayList<Button> buttons3;
@@ -78,7 +74,7 @@ public class TicTacToeSingleHard {
      */
 
     @FXML
-    public void ClickButton30(ActionEvent ev1){
+    public void ClickButton30(){
         button30.setText("X");
         button30.setDisable(true);
         map[0][0] = 'X';
@@ -87,7 +83,7 @@ public class TicTacToeSingleHard {
     }
 
     @FXML
-    public void ClickButton31(ActionEvent ev1){
+    public void ClickButton31(){
         button31.setText("X");
         button31.setDisable(true);
         map[0][1] = 'X';
@@ -95,14 +91,14 @@ public class TicTacToeSingleHard {
     }
 
     @FXML
-    public void ClickButton32(ActionEvent ev1){
+    public void ClickButton32(){
         button32.setText("X");
         button32.setDisable(true);
         map[0][2] = 'X';
         Start();
     }
     @FXML
-    public void ClickButton33(ActionEvent ev1){
+    public void ClickButton33(){
         button33.setText("X");
         button33.setDisable(true);
         map[1][0] = 'X';
@@ -110,7 +106,7 @@ public class TicTacToeSingleHard {
     }
 
     @FXML
-    public void ClickButton34(ActionEvent ev1){
+    public void ClickButton34(){
         button34.setText("X");
         button34.setDisable(true);
         map[1][1] = 'X';
@@ -118,7 +114,7 @@ public class TicTacToeSingleHard {
     }
 
     @FXML
-    public void ClickButton35(ActionEvent ev1){
+    public void ClickButton35(){
         button35.setText("X");
         button35.setDisable(true);
         map[1][2] = 'X';
@@ -126,7 +122,7 @@ public class TicTacToeSingleHard {
     }
 
     @FXML
-    public void ClickButton36(ActionEvent ev1){
+    public void ClickButton36(){
         button36.setText("X");
         button36.setDisable(true);
         map[2][0] = 'X';
@@ -134,7 +130,7 @@ public class TicTacToeSingleHard {
     }
 
     @FXML
-    public void ClickButton37(ActionEvent ev1){
+    public void ClickButton37(){
         button37.setText("X");
         button37.setDisable(true);
         map[2][1] = 'X';
@@ -142,7 +138,7 @@ public class TicTacToeSingleHard {
     }
 
     @FXML
-    public void ClickButton38(ActionEvent ev1){
+    public void ClickButton38(){
         button38.setText("X");
         button38.setDisable(true);
         map[2][2] = 'X';
@@ -322,9 +318,6 @@ public class TicTacToeSingleHard {
 
     /**
      * Проверка на валидность хода
-     *
-     * @param x
-     * @param y
      * @return признак валидности хода
      */
     private static boolean isCellValid(int x, int y, char playerSymbol) {
@@ -518,10 +511,9 @@ public class TicTacToeSingleHard {
 
     /**
      * Click back button
-     * @param ev
      */
     @FXML
-    private void ClickBackButtonHard(ActionEvent ev){
+    private void ClickBackButtonHard(){
         BackButtonHard.getScene().getWindow().hide();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("ChooseSinglRegim.fxml"));

@@ -1,6 +1,5 @@
 package com.example.tictactoe;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -27,10 +26,7 @@ public class HelloController {
     @FXML
     private Button menuFlashCardsButton2;
 
-    @FXML
-    private Button ExitButton;
-
-    private int r = 0;
+    int r = 0;
 
     @FXML
     void initialize() {
@@ -38,11 +34,10 @@ public class HelloController {
 
 
     /**
-     *
-     * @param ev
+     * Click for move to next scene
      */
     @FXML
-    private void clickButton1(ActionEvent ev){
+    private void clickButton1(){
         menuArticlesButton.getScene().getWindow().hide();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("ChooseGame.fxml"));
@@ -61,10 +56,10 @@ public class HelloController {
 
     /**
      *
-     * @param ev1
+     * Click for move to next scene
      */
     @FXML
-    private void clickButton2(ActionEvent ev1){
+    private void clickButton2(){
         menuFlashCardsButton.getScene().getWindow().hide();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("GameField.fxml"));
@@ -83,10 +78,10 @@ public class HelloController {
 
     /**
      *
-     * @param ev
+     * Click for move to next scene
      */
     @FXML
-    private void ClickBackButton1(ActionEvent ev){
+    private void ClickBackButton1(){
         BackButton1.getScene().getWindow().hide();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("MainMenu.fxml"));
@@ -104,10 +99,10 @@ public class HelloController {
 
     /**
      *
-     * @param ev
+     * Click for move to next scene
      */
     @FXML
-    private void ClickSingleButton(ActionEvent ev){
+    private void ClickSingleButton(){
         menuFlashCardsButton2.getScene().getWindow().hide();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("ChooseSinglRegim.fxml"));
@@ -125,10 +120,10 @@ public class HelloController {
 
     /**
      *
-     * @param ev
+     * Click for move to next scene
      */
     @FXML
-    private void ClickExitButton(ActionEvent ev){
+    private void ClickExitButton(){
         System.exit(0);
     }
 }

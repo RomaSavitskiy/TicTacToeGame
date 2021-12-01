@@ -1,10 +1,9 @@
 package com.example.tictactoe;
 
 
-import javafx.event.ActionEvent;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -12,11 +11,9 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.ResourceBundle;
-import java.util.Random;
+
 
 /**
  * Game process of easy game
@@ -56,9 +53,6 @@ public class TicTacToeSingleEasy {
     @FXML
     private Text winnerText2;
 
-    @FXML
-    private Text restartGameButton2;
-
     int x;
 
     ArrayList<Button> buttons2;
@@ -66,8 +60,6 @@ public class TicTacToeSingleEasy {
     int playerTurn = 0;
 
     int winner2 = 0;
-
-    Random random = new Random(System.currentTimeMillis());
 
     int[] ListButtons = new int[] {0,0,0,0,0,0,0,0,0};
 
@@ -80,11 +72,10 @@ public class TicTacToeSingleEasy {
     }
 
     /**
-     *
-     * @param ev1
+     * Click button
      */
     @FXML
-    public void ClickButton20(ActionEvent ev1){
+    public void ClickButton20(){
         button20.setText("X");
         playerTurn++;
         button20.setDisable(true);
@@ -99,11 +90,10 @@ public class TicTacToeSingleEasy {
 
 
     /**
-     *
-     * @param ev1
+     * Click button
      */
     @FXML
-    public void ClickButton21(ActionEvent ev1){
+    public void ClickButton21(){
         button21.setText("X");
         playerTurn++;
         button21.setDisable(true);
@@ -117,11 +107,10 @@ public class TicTacToeSingleEasy {
     }
 
     /**
-     *
-     * @param ev1
+     *  Click button
      */
     @FXML
-    public void ClickButton22(ActionEvent ev1){
+    public void ClickButton22(){
         button22.setText("X");
         playerTurn++;
         button22.setDisable(true);
@@ -135,11 +124,10 @@ public class TicTacToeSingleEasy {
     }
 
     /**
-     *
-     * @param ev1
+     *  Click button
      */
     @FXML
-    public void ClickButton23(ActionEvent ev1){
+    public void ClickButton23(){
         button23.setText("X");
         playerTurn++;
         button23.setDisable(true);
@@ -153,11 +141,10 @@ public class TicTacToeSingleEasy {
     }
 
     /**
-     *
-     * @param ev1
+     *  Click button
      */
     @FXML
-    public void ClickButton24(ActionEvent ev1){
+    public void ClickButton24(){
         button24.setText("X");
         playerTurn++;
         button24.setDisable(true);
@@ -171,11 +158,10 @@ public class TicTacToeSingleEasy {
     }
 
     /**
-     *
-     * @param ev1
+     *  Click button
      */
     @FXML
-    public void ClickButton25(ActionEvent ev1){
+    public void ClickButton25(){
         button25.setText("X");
         playerTurn++;
         button25.setDisable(true);
@@ -190,11 +176,10 @@ public class TicTacToeSingleEasy {
 
 
     /**
-     *
-     * @param ev1
+     *  Click button
      */
     @FXML
-    public void ClickButton26(ActionEvent ev1){
+    public void ClickButton26(){
         button26.setText("X");
         playerTurn++;
         button26.setDisable(true);
@@ -208,11 +193,10 @@ public class TicTacToeSingleEasy {
     }
 
     /**
-     *
-     * @param ev1
+     Click button
      */
     @FXML
-    public void ClickButton27(ActionEvent ev1){
+    public void ClickButton27(){
         button27.setText("X");
         playerTurn++;
         button27.setDisable(true);
@@ -226,11 +210,10 @@ public class TicTacToeSingleEasy {
     }
 
     /**
-     *
-     * @param ev1
+     * Click button
      */
     @FXML
-    public void ClickButton28(ActionEvent ev1){
+    public void ClickButton28(){
         button28.setText("X");
         playerTurn++;
         button28.setDisable(true);
@@ -249,8 +232,7 @@ public class TicTacToeSingleEasy {
     public void SetComputerSymbol(){
 
         while(ListButtons[x] == 1){
-            x = (int)
-                    (Math.random() * 9);
+            x = (int) (Math.random() * 9);
         }
         if(x==0){
             button20.setText("O");
@@ -309,11 +291,10 @@ public class TicTacToeSingleEasy {
     }
 
     /**
-     *
-     * @param event
+     * Click restart button
      */
     @FXML
-    void restartGame2(ActionEvent event) {
+    void restartGame2() {
         winnerText2.setText("Tic-Tac-Toe");
         playerTurn = 0;
         winner2 = 0;
@@ -401,10 +382,9 @@ public class TicTacToeSingleEasy {
 
     /**
      * back button
-     * @param ev
      */
     @FXML
-    private void ClickBackButton4(ActionEvent ev){
+    private void ClickBackButton4(){
         BackButton4.getScene().getWindow().hide();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("ChooseSinglRegim.fxml"));

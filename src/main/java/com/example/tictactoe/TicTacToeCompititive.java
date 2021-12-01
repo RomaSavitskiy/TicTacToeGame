@@ -1,6 +1,6 @@
 package com.example.tictactoe;
 
-import javafx.event.ActionEvent;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -63,9 +63,7 @@ public class TicTacToeCompititive implements Initializable {
     int winner = 0;
 
     /**
-     *
-     * @param url
-     * @param resourceBundle
+     * initialization
      */
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -79,8 +77,7 @@ public class TicTacToeCompititive implements Initializable {
     }
 
     /**
-     *
-     * @param button
+     * metod for game
      */
     private void setupButton(Button button) {
         button.setOnMouseClicked(mouseEvent -> {
@@ -91,8 +88,7 @@ public class TicTacToeCompititive implements Initializable {
     }
 
     /**
-     *
-     * @param button
+     * choose symbol
      */
     public void setPlayerSymbol(Button button){
         if(playerTurn % 2 == 0){
@@ -106,11 +102,10 @@ public class TicTacToeCompititive implements Initializable {
     }
 
     /**
-     *
-     * @param event
+     * restart button
      */
     @FXML
-    void restartGame(ActionEvent event) {
+    void restartGame() {
         buttons.forEach(this::resetButton);
         winnerText.setText("Tic-Tac-Toe");
         playerTurn = 0;
@@ -118,8 +113,7 @@ public class TicTacToeCompititive implements Initializable {
     }
 
     /**
-     *
-     * @param button
+     * reset button
      */
     public void resetButton(Button button){
         button.setDisable(false);
@@ -191,11 +185,10 @@ public class TicTacToeCompititive implements Initializable {
     }
 
     /**
-     *
-     * @param ev
+     * Move to new scene
      */
     @FXML
-    private void ClickBackButton2(ActionEvent ev){
+    private void ClickBackButton2(){
         BackButton2.getScene().getWindow().hide();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("ChooseGame.fxml"));

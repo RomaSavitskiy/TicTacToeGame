@@ -1,6 +1,5 @@
 package com.example.tictactoe;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -33,10 +32,10 @@ public class ChooseSingleRegim {
     }
 
     /**
-     * @param ev
+     * Click button to new scene
      */
     @FXML
-    private void ClickBackButton3(ActionEvent ev){
+    private void ClickBackButton3(){
         BackButton3.getScene().getWindow().hide();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("ChooseGame.fxml"));
@@ -53,11 +52,10 @@ public class ChooseSingleRegim {
     }
 
     /**
-     *
-     * @param ev
+     * Click button to new scene
      */
     @FXML
-    private void ChooseSingleRegimClickEasy(ActionEvent ev){
+    private void ChooseSingleRegimClickEasy(){
         ChooseSingleRegimButton1.getScene().getWindow().hide();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("GameField2.fxml"));
@@ -74,10 +72,10 @@ public class ChooseSingleRegim {
     }
 
     /**
-     * @param ev1
+     * Click button to new scene
      */
     @FXML
-    private void ChooseSingleRegimClickHard(ActionEvent ev1){
+    private void ChooseSingleRegimClickHard(){
         ChooseSingleRegimButtonHard.getScene().getWindow().hide();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("GameFieldSingleHard.fxml"));
@@ -95,7 +93,7 @@ public class ChooseSingleRegim {
 
 
     @FXML
-    private void ChooseSingleRegimClickMedium(ActionEvent ev){
+    private void ChooseSingleRegimClickMedium(){
         ChooseSingleRegimMedium.getScene().getWindow().hide();
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("GameFieldMedium.fxml"));

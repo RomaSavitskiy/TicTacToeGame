@@ -15,11 +15,11 @@
             <Image url="@background2.css" />
          </image>
       </ImageView>
-      <Text fx:id="winnerText" fill="WHITE" layoutX="395.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tic-Tac-Toe" textAlignment="CENTER" wrappingWidth="310.9366455078125">
+      <Text fx:id="winnerText" fill="AQUA" layoutX="395.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tic-Tac-Toe" textAlignment="CENTER" wrappingWidth="310.9366455078125">
          <font>
-            <Font size="41.0" />
+            <Font size="60.0" />
          </font></Text>
-      <Button fx:id="restartGameButton1" onAction="#restartGame" layoutX="437.0" layoutY="570.0" mnemonicParsing="false"  prefHeight="55.0" prefWidth="226.0" text="RESET">
+      <Button fx:id="restartGameButton1" layoutX="437.0" layoutY="570.0" mnemonicParsing="false" onAction="#restartGame" prefHeight="55.0" prefWidth="226.0" text="RESET">
          <font>
             <Font size="25.0" />
          </font></Button>
@@ -68,6 +68,6 @@
             <Image url="@aboba.png" />
          </image>
       </ImageView>
-      <Button fx:id="BackButton2" onAction="#ClickBackButton2" blendMode="COLOR_BURN" layoutX="35.0" layoutY="34.0" mnemonicParsing="false"  prefHeight="67.0" prefWidth="118.0" stylesheets="@Arrow.css" />
+      <Button fx:id="BackButton2" blendMode="COLOR_BURN" layoutX="35.0" layoutY="34.0" mnemonicParsing="false" onAction="#ClickBackButton2" prefHeight="67.0" prefWidth="118.0" stylesheets="@Arrow.css" />
    </children>
 </AnchorPane>
