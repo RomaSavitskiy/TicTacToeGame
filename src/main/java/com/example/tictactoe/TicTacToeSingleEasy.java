@@ -1,6 +1,6 @@
 package com.example.tictactoe;
 
-
+//проверка
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -399,4 +399,5 @@ public class TicTacToeSingleEasy {
         stage.setScene(new Scene(root));
         stage.show();
     }
+    //Проверка
 }

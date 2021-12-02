@@ -1,5 +1,7 @@
 package com.example.tictactoe;
 
+//Добавление кнопки рестарт
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

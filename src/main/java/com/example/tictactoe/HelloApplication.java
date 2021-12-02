@@ -1,5 +1,7 @@
 package com.example.tictactoe;
 
+//Устранение ошибок
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
