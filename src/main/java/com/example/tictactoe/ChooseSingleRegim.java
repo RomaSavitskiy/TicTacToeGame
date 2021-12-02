@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-/**\
+/**
  * Choose level game of single type
  */
 public class ChooseSingleRegim {

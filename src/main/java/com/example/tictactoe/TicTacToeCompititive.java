@@ -77,7 +77,8 @@ public class TicTacToeCompititive implements Initializable {
     }
 
     /**
-     * metod for game
+     *
+     * @param button
      */
     private void setupButton(Button button) {
         button.setOnMouseClicked(mouseEvent -> {
