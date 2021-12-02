@@ -383,5 +383,21 @@ public class TicTacToeSingleEasy {
     /**
      * back button
      */
-    
+    @FXML
+    private void ClickBackButton4(){
+        BackButton4.getScene().getWindow().hide();
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("ChooseSinglRegim.fxml"));
+        try {
+            loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        Parent root = loader.getRoot();
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.show();
+    }
+    //Проверка
 }
