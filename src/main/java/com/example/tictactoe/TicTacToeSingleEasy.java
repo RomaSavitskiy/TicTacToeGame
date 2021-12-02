@@ -1,6 +1,6 @@
 package com.example.tictactoe;
 
-
+//проверка
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
