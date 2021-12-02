@@ -1,5 +1,6 @@
 package com.example.tictactoe;
 
+//Устранение ошибок 
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
