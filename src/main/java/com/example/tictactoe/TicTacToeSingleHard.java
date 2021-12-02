@@ -1,7 +1,6 @@
 package com.example.tictactoe;
 
-
-//исправление ошибок
+//Добавление кнопки рестарт
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
